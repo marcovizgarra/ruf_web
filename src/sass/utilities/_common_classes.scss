@@ -1,0 +1,7 @@
+.ruf_logo {
+    width: 16rem;
+
+    @media only screen and (max-width: 920px) {
+        width: 14rem;
+    }
+}

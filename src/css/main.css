@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif; }
+
+.ruf_logo {
+  width: 16rem; }
+  @media only screen and (max-width: 920px) {
+    .ruf_logo {
+      width: 14rem; } }
+
+#home_header {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to top, #ffffffcb, #ffffffcb), url("/public/img/home_page/top_background.jpg");
+  background-color: gray; }
+  #home_header .ruf_logo {
+    margin-left: 5rem; }
+
+#bussines_unit {
+  width: 100w;
+  min-height: 20rem;
+  display: flex;
+  justify-content: center; }
+  #bussines_unit #banner {
+    width: 75vw;
+    margin: 2rem;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #181d5257, #181d52cc), url("/public/img/home_page/secondary_background.png");
+    background-color: #181D52;
+    background-repeat: no-repeat;
+    background-size: 12rem;
+    box-shadow: 0px 0px 13px 0px #000000bf; }
+    @media only screen and (max-width: 1000px) {
+      #bussines_unit #banner {
+        width: 95vw; } }
+    #bussines_unit #banner .intro {
+      width: 65%; }
+    #bussines_unit #banner .card_container {
+      width: auto;
+      display: flex;
+      flex-direction: column; }
+      #bussines_unit #banner .card_container .row {
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0; }
+        #bussines_unit #banner .card_container .row .unit_card {
+          margin: .2rem;
+          width: 10rem;
+          height: 10rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          #bussines_unit #banner .card_container .row .unit_card img {
+            width: 4rem;
+            height: 3.5rem;
+            margin-bottom: 1rem; }
+          #bussines_unit #banner .card_container .row .unit_card h2 {
+            font-size: 1.2rem;
+            padding: 0;
+            margin: 0; }
+        #bussines_unit #banner .card_container .row .Eduactivo {
+          background-color: #F19C1D; }
+        #bussines_unit #banner .card_container .row .Industrial {
+          background-color: #0098DA; }
+        #bussines_unit #banner .card_container .row .RSE {
+          background-color: #00B25D; }
+        #bussines_unit #banner .card_container .row .GovTech {
+          background-color: #222121; }
