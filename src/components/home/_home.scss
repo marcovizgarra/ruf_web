@@ -1,13 +1,14 @@
 #home_header {
     width: 100vw;
-    height: 30vh;
+    height: 25vh;
     display: flex;
         align-items: center;
     background: linear-gradient(to top, #ffffffcb, #ffffffcb), url('/public/img/home_page/top_background.jpg');
         background-color: gray;
+        background-size: cover;
 
-    .ruf_logo {
-        margin-left: 5rem;
+    @media only screen and (max-width: 425px) {
+        height: 20vh;
     }
 }
 
@@ -19,7 +20,7 @@
     #banner {
         width: 75vw;
         margin: 2rem;
-        padding: 2rem;
+        padding: 1rem;
         color: white;
         display: flex;
         flex-direction: row;
@@ -31,24 +32,54 @@
             background-size: 12rem;
         box-shadow: 0px 0px 13px 0px #000000bf;
         
-        @media only screen and (max-width: 1000px) {
+        @media only screen and (max-width: 1500px) {
             width: 95vw;
             padding: 1rem;
         }
 
+        @media only screen and (max-width: 768px) {
+            width: 100vw;
+            margin: .5rem;
+        }
+
+        @media only screen and (max-width: 720px) {
+            flex-direction: column;
+        }
+
         .intro {
             width: 65%;
+            height: 100%;
             padding: 1rem;
 
-            @media only screen and (max-width: 1000px) {
+            @media only screen and (max-width: 1500px) {
                 width: 60%;
+            }
+
+            @media only screen and (max-width: 768px) {
+                width: 60%;
+            }
+
+            @media only screen and (max-width: 720px) {
+                width: 90%;
+            }
+
+            @media only screen and (max-width: 425px) {
+                padding: 0;
             }
         }
 
         .card_container {
             width: auto;
             display: flex;
-                flex-direction: column;               
+                flex-direction: column;    
+                
+            @media only screen and (max-width: 720px) {
+                flex-direction: row;
+            }
+
+            @media only screen and (max-width: 585px) {
+                flex-direction: column;
+            }
     
             .row {
                 justify-content: flex-end;
@@ -63,6 +94,11 @@
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+
+                        @media only screen and (max-width: 922px) {
+                            width: 8rem;
+                            height: 8rem;
+                        }
 
                     img {
                         width: 4rem;
@@ -90,7 +126,7 @@
                 }
 
                 .GovTech {
-                    background-color: #222121;
+                    background-color: #3f3e3e;
                 }
             }
         }

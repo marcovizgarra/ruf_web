@@ -1,7 +1,18 @@
 .ruf_logo {
     width: 16rem;
+    margin-left: 5rem;
 
     @media only screen and (max-width: 920px) {
         width: 14rem;
+        margin-left: 4rem;
+    }
+
+    @media only screen and (max-width: 720px) {
+        width: 12rem;
+        margin-left: 2rem;       
+    }
+
+    @media only screen and (max-width: 425px) {
+        width: 10rem;
     }
 }

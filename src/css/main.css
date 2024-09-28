@@ -5,20 +5,31 @@
   font-family: "Montserrat", sans-serif; }
 
 .ruf_logo {
-  width: 16rem; }
+  width: 16rem;
+  margin-left: 5rem; }
   @media only screen and (max-width: 920px) {
     .ruf_logo {
-      width: 14rem; } }
+      width: 14rem;
+      margin-left: 4rem; } }
+  @media only screen and (max-width: 720px) {
+    .ruf_logo {
+      width: 12rem;
+      margin-left: 2rem; } }
+  @media only screen and (max-width: 425px) {
+    .ruf_logo {
+      width: 10rem; } }
 
 #home_header {
   width: 100vw;
-  height: 30vh;
+  height: 25vh;
   display: flex;
   align-items: center;
   background: linear-gradient(to top, #ffffffcb, #ffffffcb), url("/public/img/home_page/top_background.jpg");
-  background-color: gray; }
-  #home_header .ruf_logo {
-    margin-left: 5rem; }
+  background-color: gray;
+  background-size: cover; }
+  @media only screen and (max-width: 425px) {
+    #home_header {
+      height: 20vh; } }
 
 #bussines_unit {
   width: 100w;
@@ -28,7 +39,7 @@
   #bussines_unit #banner {
     width: 75vw;
     margin: 2rem;
-    padding: 2rem;
+    padding: 1rem;
     color: white;
     display: flex;
     flex-direction: row;
@@ -39,20 +50,43 @@
     background-repeat: no-repeat;
     background-size: 12rem;
     box-shadow: 0px 0px 13px 0px #000000bf; }
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 1500px) {
       #bussines_unit #banner {
         width: 95vw;
         padding: 1rem; } }
+    @media only screen and (max-width: 768px) {
+      #bussines_unit #banner {
+        width: 100vw;
+        margin: .5rem; } }
+    @media only screen and (max-width: 720px) {
+      #bussines_unit #banner {
+        flex-direction: column; } }
     #bussines_unit #banner .intro {
       width: 65%;
+      height: 100%;
       padding: 1rem; }
-      @media only screen and (max-width: 1000px) {
+      @media only screen and (max-width: 1500px) {
         #bussines_unit #banner .intro {
           width: 60%; } }
+      @media only screen and (max-width: 768px) {
+        #bussines_unit #banner .intro {
+          width: 60%; } }
+      @media only screen and (max-width: 720px) {
+        #bussines_unit #banner .intro {
+          width: 90%; } }
+      @media only screen and (max-width: 425px) {
+        #bussines_unit #banner .intro {
+          padding: 0; } }
     #bussines_unit #banner .card_container {
       width: auto;
       display: flex;
       flex-direction: column; }
+      @media only screen and (max-width: 720px) {
+        #bussines_unit #banner .card_container {
+          flex-direction: row; } }
+      @media only screen and (max-width: 585px) {
+        #bussines_unit #banner .card_container {
+          flex-direction: column; } }
       #bussines_unit #banner .card_container .row {
         justify-content: flex-end;
         margin: 0;
@@ -65,6 +99,10 @@
           flex-direction: column;
           justify-content: center;
           align-items: center; }
+          @media only screen and (max-width: 922px) {
+            #bussines_unit #banner .card_container .row .unit_card {
+              width: 8rem;
+              height: 8rem; } }
           #bussines_unit #banner .card_container .row .unit_card img {
             width: 4rem;
             height: 3.5rem;
@@ -80,4 +118,4 @@
         #bussines_unit #banner .card_container .row .RSE {
           background-color: #00B25D; }
         #bussines_unit #banner .card_container .row .GovTech {
-          background-color: #222121; }
+          background-color: #3f3e3e; }
