@@ -3,8 +3,11 @@ import industry_icon from '/img/home_page/industry_icon.png';
 import education_icon from '/img/home_page/education_icon.png';
 import rse_icon from '/img/home_page/rse_icon.png';
 import gov_tech_icon from '/img/home_page/gov_tech_icon.png';
+import location_icon from '/img/home_page/location-dot-solid.svg';
+import whatsapp_icon from '/img/home_page/whatsapp-brands-solid.svg';
+import e_mail_icon from '/img/home_page/envelope-solid.svg';
+import contact_icon from '/img/home_page/address-book-solid.svg';
 import { getFileName } from '/src/js/functions.js';
-import { useState } from 'react';
 
 const UnitCard = ({ img, title }) => {
     return(
@@ -20,12 +23,12 @@ const UnitCard = ({ img, title }) => {
 const BussinesUnits = () => {
     return(
         <>
-            <section id="bussines_unit">
+            <section id="bussines_units">
                 <div id="banner">
                     <div className='intro'>
                         <h1>TÍTULO/ DESCRIPCIÓN</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur eos inventore itaque distinctio temporibus voluptas architecto! Sunt sequi quis libero quisquam minima quod quos iure numquam nulla necessitatibus.</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est nesciunt culpa recusandae vero odio quas dolorum mollitia! Eaque fuga explicabo tenetur quia praesentium, voluptatum, cumque reprehenderit dicta cupiditate architecto ut!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam autem necessitatibus eos est in totam, placeat reiciendis, rerum eum fuga deleniti distinctio quidem non veniam provident nemo atque. Et, quasi nisi. Exercitationem, pariatur et possimus dolores laudantium atque sunt facilis distinctio assumenda officia, ad fuga.</p>
+                        <p className='secondary_p'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam autem necessitatibus eos est in totam, placeat reiciendis, rerum eum fuga deleniti distinctio quidem non veniam provident nemo atque. Et, quasi nisi. Exercitationem, pariatur et possimus dolores laudantium atque sunt facilis distinctio assumenda officia, ad fuga.</p>
                     </div>
 
                     <div className="card_container">
@@ -45,13 +48,46 @@ const BussinesUnits = () => {
     )
 }
 
+const Contact = () => {
+    return(
+        <>
+            <section className="home_page_contact">
+                <div className='links'>
+                    <ul>
+                        <h3>CONTÁCTANOS</h3>
+                        <li>
+                            <img src={location_icon} alt={getFileName(location_icon)} /> 
+                            <p>Av. Martín Tissera 957, Mendiolaza, Argentina</p>
+                        </li>
+                        <li>
+                            <img src={whatsapp_icon} alt={getFileName(whatsapp_icon)} />
+                            <p>+54 9 3516 095013 / +54 9 3513 297292</p>
+                        </li>
+                        <li>
+                            <img src={e_mail_icon} alt={getFileName(e_mail_icon)} />
+                            <p>ruf.desarrollos@gmail.com</p>
+                        </li>
+                        <br />
+                        <button className='contact_form_btn'>
+                            <img src={contact_icon} alt={getFileName(contact_icon)} />
+                            Ir al furmulario de contacto
+                        </button>  
+                    </ul>                  
+                </div>
+            </section>
+        </>
+    )
+}
+
 const Home = () => {
     return(
         <>
             <header id="home_header"> 
                 <RUF_logo />
             </header>
+            
             <BussinesUnits />
+            <Contact />
         </>
     )
 }
