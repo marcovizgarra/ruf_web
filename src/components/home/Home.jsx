@@ -1,9 +1,10 @@
-import ruf_logo from '/img/home_page/ruf_logo.png';
+import RUF_logo from '../RUF_logo/RUF_logo.jsx'
 import industry_icon from '/img/home_page/industry_icon.png';
 import education_icon from '/img/home_page/education_icon.png';
 import rse_icon from '/img/home_page/rse_icon.png';
 import gov_tech_icon from '/img/home_page/gov_tech_icon.png';
 import { getFileName } from '/src/js/functions.js';
+import { useState } from 'react';
 
 const UnitCard = ({ img, title }) => {
     return(
@@ -24,6 +25,7 @@ const BussinesUnits = () => {
                     <div className='intro'>
                         <h1>TÍTULO/ DESCRIPCIÓN</h1>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur eos inventore itaque distinctio temporibus voluptas architecto! Sunt sequi quis libero quisquam minima quod quos iure numquam nulla necessitatibus.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est nesciunt culpa recusandae vero odio quas dolorum mollitia! Eaque fuga explicabo tenetur quia praesentium, voluptatum, cumque reprehenderit dicta cupiditate architecto ut!</p>
                     </div>
 
                     <div className="card_container">
@@ -38,7 +40,6 @@ const BussinesUnits = () => {
                         </div>
                     </div>
                 </div>
-
             </section>
         </>
     )
@@ -47,10 +48,9 @@ const BussinesUnits = () => {
 const Home = () => {
     return(
         <>
-            <header id="home_header">
-                <img className='ruf_logo' src={ruf_logo} alt={getFileName(ruf_logo)} />
+            <header id="home_header"> 
+                <RUF_logo />
             </header>
-
             <BussinesUnits />
         </>
     )

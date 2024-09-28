@@ -1,0 +1,56 @@
+.logo_container {
+    .ruf_logo {
+        width: 16rem;
+        margin-top: 2rem;
+        margin-left: 5rem;
+        display: flex;
+            flex-direction: column;
+    
+        @media only screen and (max-width: 920px) {
+            width: 14rem;
+            margin-left: 4rem;
+        }
+    
+        @media only screen and (max-width: 720px) {
+            width: 12rem;
+            margin-left: 2rem;
+        }
+    
+        @media only screen and (max-width: 425px) {
+            width: 10rem;
+        }
+    }
+
+    .hide_initials {
+        color: #ffffff00;
+        margin-left: 5rem;
+        margin-top: .5rem;
+        transition: .8s;
+
+        @media only screen and (max-width: 920px) {
+            font-size: small;
+            margin-left: 4rem;
+        }
+
+        @media only screen and (max-width: 720px) {
+            font-size: x-small;
+            margin-left: 2rem;
+        }
+    }
+
+    .initials_enter {
+        margin-left: 5rem;
+        font-weight: bold;
+        margin-top: .5rem;
+
+        @media only screen and (max-width: 920px) {
+            font-size: small;
+            margin-left: 4rem;
+        }
+
+        @media only screen and (max-width: 720px) {
+            font-size: x-small;
+            margin-left: 2rem;       
+        }
+    }
+}

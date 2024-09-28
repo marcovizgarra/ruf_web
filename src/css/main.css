@@ -4,21 +4,6 @@
   padding: 0;
   font-family: "Montserrat", sans-serif; }
 
-.ruf_logo {
-  width: 16rem;
-  margin-left: 5rem; }
-  @media only screen and (max-width: 920px) {
-    .ruf_logo {
-      width: 14rem;
-      margin-left: 4rem; } }
-  @media only screen and (max-width: 720px) {
-    .ruf_logo {
-      width: 12rem;
-      margin-left: 2rem; } }
-  @media only screen and (max-width: 425px) {
-    .ruf_logo {
-      width: 10rem; } }
-
 #home_header {
   width: 100vw;
   height: 25vh;
@@ -119,3 +104,48 @@
           background-color: #00B25D; }
         #bussines_unit #banner .card_container .row .GovTech {
           background-color: #3f3e3e; }
+
+.logo_container .ruf_logo {
+  width: 16rem;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (max-width: 920px) {
+    .logo_container .ruf_logo {
+      width: 14rem;
+      margin-left: 4rem; } }
+  @media only screen and (max-width: 720px) {
+    .logo_container .ruf_logo {
+      width: 12rem;
+      margin-left: 2rem; } }
+  @media only screen and (max-width: 425px) {
+    .logo_container .ruf_logo {
+      width: 10rem; } }
+
+.logo_container .hide_initials {
+  color: #ffffff00;
+  margin-left: 5rem;
+  margin-top: .5rem;
+  transition: .8s; }
+  @media only screen and (max-width: 920px) {
+    .logo_container .hide_initials {
+      font-size: small;
+      margin-left: 4rem; } }
+  @media only screen and (max-width: 720px) {
+    .logo_container .hide_initials {
+      font-size: x-small;
+      margin-left: 2rem; } }
+
+.logo_container .initials_enter {
+  margin-left: 5rem;
+  font-weight: bold;
+  margin-top: .5rem; }
+  @media only screen and (max-width: 920px) {
+    .logo_container .initials_enter {
+      font-size: small;
+      margin-left: 4rem; } }
+  @media only screen and (max-width: 720px) {
+    .logo_container .initials_enter {
+      font-size: x-small;
+      margin-left: 2rem; } }
