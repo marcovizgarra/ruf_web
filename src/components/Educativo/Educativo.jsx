@@ -2,6 +2,7 @@ import { getFileName } from '/src/js/functions.js';
 import graduation_cap from '/public/img/educativo/graduation-cap-solid.png';
 import robot_icon from '/public/img/educativo/robot-solid.png';
 import user_icon from '/public/img/educativo/chalkboard-user-solid.png';
+import Navbar from '../Navbar/navbar';
 
 const ProductCard = ({ title, description, icon, back_color }) => {
 
@@ -19,6 +20,7 @@ const ProductCard = ({ title, description, icon, back_color }) => {
 const Educativo = () => {
     return(
         <>
+            <Navbar />
             <section id="educativo">
                 <header className='header_educativo'>
                     <div className="header_pic">
