@@ -6,15 +6,12 @@
 
 #home_header {
   width: 99vw;
-  height: 20vh;
+  height: fit-content;
   display: flex;
   align-items: center;
   background: linear-gradient(to top, #ffffffcb, #ffffffcb), url("/public/img/home_page/top_background.jpg");
   background-color: gray;
   background-size: cover; }
-  @media only screen and (max-width: 425px) {
-    #home_header {
-      height: 20vh; } }
 
 #bussines_units {
   width: 99w;
@@ -42,10 +39,18 @@
     @media only screen and (max-width: 768px) {
       #bussines_units #banner {
         width: 99vw;
-        margin: .5rem; } }
+        margin: .5rem;
+        box-shadow: none; } }
     @media only screen and (max-width: 720px) {
       #bussines_units #banner {
         flex-direction: column; } }
+    @media only screen and (max-width: 575px) {
+      #bussines_units #banner {
+        margin: 0;
+        background: linear-gradient(to top, #ffffff57, #ffffffcc), url("/public/img/home_page/secondary_background.png");
+        background-color: #ffffff;
+        background-repeat: no-repeat;
+        background-size: 18rem; } }
     #bussines_units #banner .intro {
       width: 65%;
       height: 100%;
@@ -59,9 +64,10 @@
       @media only screen and (max-width: 720px) {
         #bussines_units #banner .intro {
           width: 90%; } }
-      @media only screen and (max-width: 425px) {
+      @media only screen and (max-width: 575px) {
         #bussines_units #banner .intro {
-          padding: 0; } }
+          padding: 0;
+          color: #3f3e3e; } }
       @media only screen and (max-width: 928px) {
         #bussines_units #banner .intro .secondary_p {
           display: none; } }
@@ -193,47 +199,147 @@
           margin-left: .5rem;
           margin-right: 1.3rem; }
 
-.logo_container .ruf_logo {
-  width: 16rem;
-  margin-top: 2rem;
-  margin-left: 5rem;
+.logo_container {
+  width: 23.5rem;
   display: flex;
   flex-direction: column; }
-  @media only screen and (max-width: 920px) {
-    .logo_container .ruf_logo {
-      width: 14rem;
-      margin-left: 4rem; } }
-  @media only screen and (max-width: 720px) {
-    .logo_container .ruf_logo {
-      width: 12rem;
-      margin-left: 2rem; } }
-  @media only screen and (max-width: 425px) {
-    .logo_container .ruf_logo {
-      width: 10rem; } }
+  .logo_container .ruf_logo {
+    width: 10rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column; }
+    @media only screen and (max-width: 920px) {
+      .logo_container .ruf_logo {
+        margin-left: 4rem; } }
+    @media only screen and (max-width: 720px) {
+      .logo_container .ruf_logo {
+        margin-left: 2rem; } }
+    @media only screen and (max-width: 425px) {
+      .logo_container .ruf_logo {
+        width: 8rem; } }
+  .logo_container .hide_initials {
+    width: fit-content;
+    font-size: small;
+    color: #ffffff00;
+    margin: 0;
+    margin-left: 5rem;
+    padding-top: .5rem;
+    transition: .6s; }
+    @media only screen and (max-width: 920px) {
+      .logo_container .hide_initials {
+        font-size: small;
+        margin-left: 4rem; } }
+    @media only screen and (max-width: 720px) {
+      .logo_container .hide_initials {
+        font-size: x-small;
+        margin-left: 2rem; } }
+  .logo_container .initials_enter {
+    width: fit-content;
+    font-size: small;
+    margin: 0;
+    margin-left: 5rem;
+    padding-top: .5rem; }
+    @media only screen and (max-width: 920px) {
+      .logo_container .initials_enter {
+        font-size: small;
+        margin-left: 4rem; } }
+    @media only screen and (max-width: 720px) {
+      .logo_container .initials_enter {
+        font-size: x-small;
+        margin-left: 2rem; } }
 
-.logo_container .hide_initials {
-  color: #ffffff00;
-  margin-left: 5rem;
-  margin-top: .5rem;
-  transition: .8s; }
-  @media only screen and (max-width: 920px) {
-    .logo_container .hide_initials {
-      font-size: small;
-      margin-left: 4rem; } }
-  @media only screen and (max-width: 720px) {
-    .logo_container .hide_initials {
-      font-size: x-small;
-      margin-left: 2rem; } }
+.navbar {
+  height: 7.5rem;
+  padding: 0;
+  margin: 0; }
+  .navbar .container-fluid {
+    padding: 0; }
+  .navbar .collapse {
+    justify-content: center;
+    padding-right: 314.42px;
+    margin: 0;
+    height: 100%; }
+    .navbar .collapse .navbar-nav .nav-item {
+      height: 7rem;
+      line-height: 7rem;
+      padding-right: 1.5rem; }
+      .navbar .collapse .navbar-nav .nav-item:last-child {
+        padding-right: 0; }
+      .navbar .collapse .navbar-nav .nav-item .nav-link {
+        padding: 0; }
+      .navbar .collapse .navbar-nav .nav-item .active {
+        background: linear-gradient(90deg, #da7100 0%, #ff9500 19%, #ffa527 47%);
+        background-clip: text;
+        border-bottom: 4px solid transparent;
+        border-image: linear-gradient(90deg, #da7100 0%, #ff9500 19%, #ffa527 47%) 1;
+        color: transparent;
+        position: relative;
+        font-weight: bold; }
 
-.logo_container .initials_enter {
-  margin-left: 5rem;
-  font-weight: bold;
-  margin-top: .5rem; }
-  @media only screen and (max-width: 920px) {
-    .logo_container .initials_enter {
-      font-size: small;
-      margin-left: 4rem; } }
-  @media only screen and (max-width: 720px) {
-    .logo_container .initials_enter {
-      font-size: x-small;
-      margin-left: 2rem; } }
+#educativo .header_educativo {
+  height: 50vh;
+  display: flex;
+  flex-direction: row; }
+  #educativo .header_educativo .header_pic {
+    background: url("/public//img/educativo/ruf_educativo_header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 52vw; }
+  #educativo .header_educativo .header_description {
+    background-color: #FF9900;
+    text-align: center;
+    width: 47vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    #educativo .header_educativo .header_description h1 {
+      margin-bottom: 3rem; }
+    #educativo .header_educativo .header_description p {
+      width: 50%;
+      font-size: large; }
+
+.educativo_products {
+  height: 40vw;
+  width: 99vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(24deg, #e18d32 0%, #eec08e 10%, #f3d3af 20%, #faecdd 28%, white 39%, white 61%, #d6faff 72%, #c3f8ff 82%, #b3f6ff 89%, #95f2ff 97%, #95f2ff 100%); }
+  .educativo_products .description {
+    text-align: center;
+    width: 50%; }
+    .educativo_products .description h2 {
+      margin: 2rem; }
+    .educativo_products .description p {
+      margin: 3rem;
+      font-size: large; }
+  .educativo_products .card_container {
+    display: flex;
+    flex-direction: row; }
+    .educativo_products .card_container .product_card {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 20rem;
+      height: 12rem;
+      text-align: center;
+      border-radius: 40px;
+      margin-right: 2rem; }
+      .educativo_products .card_container .product_card:last-child {
+        margin-right: 0; }
+      .educativo_products .card_container .product_card h3 {
+        font-weight: bold;
+        font-size: x-large; }
+      .educativo_products .card_container .product_card img {
+        width: 80px; }
+    .educativo_products .card_container .black {
+      background-color: #2F2F2F; }
+    .educativo_products .card_container .orange {
+      background-color: #FF9900; }

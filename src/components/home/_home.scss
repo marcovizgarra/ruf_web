@@ -1,15 +1,16 @@
 #home_header {
     width: 99vw;
-    height: 20vh;
+    height: fit-content;
+    // height: 20vh;
     display: flex;
      align-items: center;
     background: linear-gradient(to top, #ffffffcb, #ffffffcb), url('/public/img/home_page/top_background.jpg');
      background-color: gray;
      background-size: cover;
 
-    @media only screen and (max-width: 425px) {
-        height: 20vh;
-    }
+    // @media only screen and (max-width: 425px) {
+    //     height: fit-content;
+    // }
 }
 
 #bussines_units {
@@ -41,10 +42,19 @@
         @media only screen and (max-width: 768px) {
             width: 99vw;
             margin: .5rem;
+            box-shadow: none;
         }
 
         @media only screen and (max-width: 720px) {
             flex-direction: column;
+        }
+
+        @media only screen and (max-width: 575px) {
+            margin: 0;
+            background: linear-gradient(to top, #ffffff57, #ffffffcc), url('/public/img/home_page/secondary_background.png');
+             background-color: #ffffff;
+             background-repeat: no-repeat;
+             background-size: 18rem;
         }
 
         .intro {
@@ -64,8 +74,9 @@
                 width: 90%;
             }
 
-            @media only screen and (max-width: 425px) {
+            @media only screen and (max-width: 575px) {
                 padding: 0;
+                color: #3f3e3e;
             }
 
             .secondary_p {
