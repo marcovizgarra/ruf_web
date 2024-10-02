@@ -103,12 +103,14 @@
                 justify-content: flex-end;
                 margin: 0;
                 padding: 0;
-
+                
                 .unit_card {
                     margin: .2rem;
                     width: 10rem;
                     height: 10rem;
                     display: flex;
+                    text-decoration: none;
+                    color: white;
                      flex-direction: column;
                      justify-content: center;
                      align-items: center;
@@ -131,7 +133,7 @@
                     }
                 }
         
-                .Eduactivo{
+                .Educativo{
                     background-color: #F19C1D;
                 }
 

@@ -7,15 +7,16 @@ import location_icon from '/img/home_page/location-dot-solid.svg';
 import whatsapp_icon from '/img/home_page/whatsapp-brands-solid.svg';
 import e_mail_icon from '/img/home_page/envelope-solid.svg';
 import contact_icon from '/img/home_page/address-book-solid.svg';
+import { Link } from 'react-router-dom';
 import { getFileName } from '/src/js/functions.js';
 
 const UnitCard = ({ img, title }) => {
     return(
         <>
-            <div className={title + ' unit_card'}>
+            <Link to={title} className={title + ' unit_card'} >
                 <img src={img} alt={ getFileName(img)}/>
                 <h2>{title}</h2>
-            </div>
+            </Link>
         </>
     )
 }
@@ -33,7 +34,7 @@ const BussinesUnits = () => {
 
                     <div className="card_container">
                         <div className="row">
-                            <UnitCard title={'Eduactivo'} img={education_icon}/>
+                            <UnitCard title={'Educativo'} img={education_icon}/>
                             <UnitCard title={'Industrial'} img={industry_icon}/>
                         </div>
 
