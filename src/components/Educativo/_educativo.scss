@@ -1,4 +1,4 @@
-$img_header_width: 52vw;
+$img_header_width: 60vw;
 $desc_header_width: 99vw - $img_header_width;
 
 #educativo {
@@ -26,18 +26,19 @@ $desc_header_width: 99vw - $img_header_width;
              align-items: center;
 
             h1 {
-                margin-bottom: 3rem
+                margin-bottom: 3rem;
+                font-size: xx-large;
             }
 
             p {
-                width: 50%;
+                width: 70%;
                 font-size: large
             };
         }
     }
 }
 
-.educativo_products {
+.products {
     height: 40vw;
     width: 99vw;
     display: flex;
@@ -51,11 +52,11 @@ $desc_header_width: 99vw - $img_header_width;
         width: 50%;
 
         h2 {
-            margin: 2rem;
+            margin-bottom: 2rem;
         }
 
         p {
-            margin: 3rem;
+            margin-bottom: 2rem;
             font-size: large
         };
     }
@@ -95,6 +96,60 @@ $desc_header_width: 99vw - $img_header_width;
     
         .orange {
             background-color: #FF9900;
+        }
+    }
+}
+
+.info_container {
+    width: 99vw;
+    height: 100vh;
+    position: relative;
+    font-size: large;
+    background: url('/public/img/educativo/node_background.png');
+     background-repeat: no-repeat;
+     background-position: left bottom;
+     background-size: 40%;
+     
+    .check_list {
+        position: absolute;
+        width: 99vw;
+        left: 0;
+        right: 0;
+        top: -50px;
+        margin: auto;
+        display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+        
+        img {
+            width: 45rem;
+            border-radius: 30px;
+        }
+
+        h4 {
+            margin: 1.5rem;
+            font-weight: bold;
+        }
+
+        .sec_description {
+            width: 50%;
+            text-align: center;
+        }
+
+        ul {
+            margin-top: 2rem;
+
+            li {
+                list-style: none;
+                display: flex;
+                 align-items: center;
+
+                .check_icon {
+                    width: 30px;
+                    margin-right: 1.5rem;
+                }
+            }
         }
     }
 }

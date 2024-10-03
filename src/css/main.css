@@ -288,23 +288,24 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 52vw; }
+    width: 60vw; }
   #educativo .header_educativo .header_description {
     background-color: #FF9900;
     text-align: center;
-    width: 47vw;
+    width: 39vw;
     color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center; }
     #educativo .header_educativo .header_description h1 {
-      margin-bottom: 3rem; }
+      margin-bottom: 3rem;
+      font-size: xx-large; }
     #educativo .header_educativo .header_description p {
-      width: 50%;
+      width: 70%;
       font-size: large; }
 
-.educativo_products {
+.products {
   height: 40vw;
   width: 99vw;
   display: flex;
@@ -312,18 +313,18 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(24deg, #e18d32 0%, #eec08e 10%, #f3d3af 20%, #faecdd 28%, white 39%, white 61%, #d6faff 72%, #c3f8ff 82%, #b3f6ff 89%, #95f2ff 97%, #95f2ff 100%); }
-  .educativo_products .description {
+  .products .description {
     text-align: center;
     width: 50%; }
-    .educativo_products .description h2 {
-      margin: 2rem; }
-    .educativo_products .description p {
-      margin: 3rem;
+    .products .description h2 {
+      margin-bottom: 2rem; }
+    .products .description p {
+      margin-bottom: 2rem;
       font-size: large; }
-  .educativo_products .card_container {
+  .products .card_container {
     display: flex;
     flex-direction: row; }
-    .educativo_products .card_container .product_card {
+    .products .card_container .product_card {
       color: white;
       display: flex;
       flex-direction: column;
@@ -334,14 +335,53 @@
       text-align: center;
       border-radius: 40px;
       margin-right: 2rem; }
-      .educativo_products .card_container .product_card:last-child {
+      .products .card_container .product_card:last-child {
         margin-right: 0; }
-      .educativo_products .card_container .product_card h3 {
+      .products .card_container .product_card h3 {
         font-weight: bold;
         font-size: x-large; }
-      .educativo_products .card_container .product_card img {
+      .products .card_container .product_card img {
         width: 80px; }
-    .educativo_products .card_container .black {
+    .products .card_container .black {
       background-color: #2F2F2F; }
-    .educativo_products .card_container .orange {
+    .products .card_container .orange {
       background-color: #FF9900; }
+
+.info_container {
+  width: 99vw;
+  height: 100vh;
+  position: relative;
+  font-size: large;
+  background: url("/public/img/educativo/node_background.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 40%; }
+  .info_container .check_list {
+    position: absolute;
+    width: 99vw;
+    left: 0;
+    right: 0;
+    top: -50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .info_container .check_list img {
+      width: 45rem;
+      border-radius: 30px; }
+    .info_container .check_list h4 {
+      margin: 1.5rem;
+      font-weight: bold; }
+    .info_container .check_list .sec_description {
+      width: 50%;
+      text-align: center; }
+    .info_container .check_list ul {
+      margin-top: 2rem; }
+      .info_container .check_list ul li {
+        list-style: none;
+        display: flex;
+        align-items: center; }
+        .info_container .check_list ul li .check_icon {
+          width: 30px;
+          margin-right: 1.5rem; }
