@@ -1,0 +1,96 @@
+#contact_card {
+    margin: 5rem;
+    width: fit-content;
+    box-shadow: 0px 0px 35px -8px rgba(0,0,0,0.50);
+
+    .info_container {
+        width: 26rem;
+        height: auto;
+        padding-inline: 2rem;
+        padding-block: 3rem;
+        background: linear-gradient(164deg, rgba(249,89,15,1) 0%, rgba(255,160,57,1) 100%);
+
+        h4 {
+            font-weight: bold;
+            font-size: large;
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        ul {
+            padding: 0;
+
+            li {
+                display: flex;
+                flex-direction: row;;
+                list-style-type: none;
+                margin-bottom: 1rem;
+                &:last-child {
+                    margin-bottom: 0;    
+                }
+
+                img {
+                    width: 1.6rem;
+                    padding: .1rem;
+                }
+
+                p {
+                    margin: 0;
+                    padding-left: 1rem;
+                    color: white;
+                    font-weight: lighter;
+                }
+            }
+        }
+    }
+    
+    .form_container {
+        position: relative;
+        padding-inline: 2rem;
+        padding-block: 3rem;
+        width: 45rem;
+        border-radius: 0;
+        background-color: white;
+    
+        h4 {
+            font-weight: bold;
+            font-size: large;
+        }
+
+        input {
+            text-transform: uppercase;
+            background-color: #dddddd;
+            color: grey;
+            border-radius: 0;
+        }
+    
+        textarea {
+            background-color: #dddddd;
+            color: grey;
+            border-radius: 0;
+        }
+    
+        .col-12 {
+            position: absolute;
+            left: 87.5%;
+            bottom: -2%;
+            font-size: small;
+            width: fit-content;
+    
+            .form_btn {
+                background-color: orange;
+                border: 0px;
+                border-radius: 100px;
+                padding: 1.1rem;
+            }
+    
+            img {
+                width: 2rem;
+            }
+    
+            p {
+                text-align: center;
+            }
+        }
+    }
+}

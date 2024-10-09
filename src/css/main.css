@@ -305,26 +305,26 @@
       width: 70%;
       font-size: large; }
 
-.products {
+#educativo .products {
   height: 40vw;
   width: 99vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(24deg, #e18d32 0%, #eec08e 10%, #f3d3af 20%, #faecdd 28%, white 39%, white 61%, #d6faff 72%, #c3f8ff 82%, #b3f6ff 89%, #95f2ff 97%, #95f2ff 100%); }
-  .products .description {
+  background: linear-gradient(75deg, #e18d32 0%, #eec08e 10%, #f3d3af 20%, #faecdd 28%, white 42%, white 56%, #d6faff 72%, #c3f8ff 82%, #b3f6ff 89%, #95f2ff 97%, #95f2ff 100%); }
+  #educativo .products .description {
     text-align: center;
     width: 50%; }
-    .products .description h2 {
+    #educativo .products .description h2 {
       margin-bottom: 2rem; }
-    .products .description p {
+    #educativo .products .description p {
       margin-bottom: 2rem;
       font-size: large; }
-  .products .card_container {
+  #educativo .products .card_container {
     display: flex;
     flex-direction: row; }
-    .products .card_container .product_card {
+    #educativo .products .card_container .product_card {
       color: white;
       display: flex;
       flex-direction: column;
@@ -335,19 +335,19 @@
       text-align: center;
       border-radius: 40px;
       margin-right: 2rem; }
-      .products .card_container .product_card:last-child {
+      #educativo .products .card_container .product_card:last-child {
         margin-right: 0; }
-      .products .card_container .product_card h3 {
+      #educativo .products .card_container .product_card h3 {
         font-weight: bold;
         font-size: x-large; }
-      .products .card_container .product_card img {
+      #educativo .products .card_container .product_card img {
         width: 80px; }
-    .products .card_container .black {
+    #educativo .products .card_container .black {
       background-color: #2F2F2F; }
-    .products .card_container .orange {
+    #educativo .products .card_container .orange {
       background-color: #FF9900; }
 
-.info_container {
+#educativo .info_container {
   width: 99vw;
   height: 100vh;
   position: relative;
@@ -356,7 +356,7 @@
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: 40%; }
-  .info_container .check_list {
+  #educativo .info_container .check_list {
     position: absolute;
     width: 99vw;
     left: 0;
@@ -367,21 +367,92 @@
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-    .info_container .check_list img {
+    #educativo .info_container .check_list img {
       width: 45rem;
       border-radius: 30px; }
-    .info_container .check_list h4 {
+    #educativo .info_container .check_list h4 {
       margin: 1.5rem;
       font-weight: bold; }
-    .info_container .check_list .sec_description {
+    #educativo .info_container .check_list .sec_description {
       width: 50%;
       text-align: center; }
-    .info_container .check_list ul {
+    #educativo .info_container .check_list ul {
       margin-top: 2rem; }
-      .info_container .check_list ul li {
+      #educativo .info_container .check_list ul li {
         list-style: none;
         display: flex;
         align-items: center; }
-        .info_container .check_list ul li .check_icon {
+        #educativo .info_container .check_list ul li .check_icon {
           width: 30px;
           margin-right: 1.5rem; }
+
+#educativo .contact {
+  padding-bottom: 6rem;
+  background: linear-gradient(145deg, white 73%, #343434 73%); }
+
+#contact_card {
+  margin: 5rem;
+  width: fit-content;
+  box-shadow: 0px 0px 35px -8px rgba(0, 0, 0, 0.5); }
+  #contact_card .info_container {
+    width: 26rem;
+    height: auto;
+    padding-inline: 2rem;
+    padding-block: 3rem;
+    background: linear-gradient(164deg, #f9590f 0%, #ffa039 100%); }
+    #contact_card .info_container h4 {
+      font-weight: bold;
+      font-size: large;
+      color: white;
+      margin-bottom: 2rem; }
+    #contact_card .info_container ul {
+      padding: 0; }
+      #contact_card .info_container ul li {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin-bottom: 1rem; }
+        #contact_card .info_container ul li:last-child {
+          margin-bottom: 0; }
+        #contact_card .info_container ul li img {
+          width: 1.6rem;
+          padding: .1rem; }
+        #contact_card .info_container ul li p {
+          margin: 0;
+          padding-left: 1rem;
+          color: white;
+          font-weight: lighter; }
+  #contact_card .form_container {
+    position: relative;
+    padding-inline: 2rem;
+    padding-block: 3rem;
+    width: 45rem;
+    border-radius: 0;
+    background-color: white; }
+    #contact_card .form_container h4 {
+      font-weight: bold;
+      font-size: large; }
+    #contact_card .form_container input {
+      text-transform: uppercase;
+      background-color: #dddddd;
+      color: grey;
+      border-radius: 0; }
+    #contact_card .form_container textarea {
+      background-color: #dddddd;
+      color: grey;
+      border-radius: 0; }
+    #contact_card .form_container .col-12 {
+      position: absolute;
+      left: 87.5%;
+      bottom: -2%;
+      font-size: small;
+      width: fit-content; }
+      #contact_card .form_container .col-12 .form_btn {
+        background-color: orange;
+        border: 0px;
+        border-radius: 100px;
+        padding: 1.1rem; }
+      #contact_card .form_container .col-12 img {
+        width: 2rem; }
+      #contact_card .form_container .col-12 p {
+        text-align: center; }
