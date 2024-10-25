@@ -280,29 +280,30 @@
         font-weight: bold; }
 
 #educativo .header_educativo {
-  height: 50vh;
+  height: 600px;
   display: flex;
   flex-direction: row; }
   #educativo .header_educativo .header_pic {
+    width: 60vw;
     background: url("/public//img/educativo/ruf_educativo_header.jpg");
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 60vw; }
+    background-position: center; }
   #educativo .header_educativo .header_description {
-    background-color: #FF9900;
-    text-align: center;
     width: 39vw;
-    color: white;
+    text-align: center;
+    padding: 3rem;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center; }
+    justify-content: center;
+    align-items: center;
+    background-color: #FF9900;
+    color: white; }
     #educativo .header_educativo .header_description h1 {
-      margin-bottom: 3rem;
-      font-size: xx-large; }
+      font-weight: bold;
+      font-size: xx-large;
+      margin-bottom: 2rem; }
     #educativo .header_educativo .header_description p {
-      width: 70%;
       font-size: large; }
 
 #educativo .products {
@@ -349,27 +350,32 @@
 
 #educativo .info_container {
   width: 99vw;
-  height: 100vh;
-  position: relative;
   font-size: large;
   background: url("/public/img/educativo/node_background.png");
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: 40%; }
   #educativo .info_container .check_list {
-    position: absolute;
-    width: 99vw;
-    left: 0;
-    right: 0;
-    top: -50px;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-    #educativo .info_container .check_list img {
+    #educativo .info_container .check_list .container {
+      width: 99vw;
+      height: 32rem; }
+    #educativo .info_container .check_list .img_container {
+      position: relative;
       width: 45rem;
-      border-radius: 30px; }
+      height: 45rem;
+      height: max-content; }
+      #educativo .info_container .check_list .img_container img {
+        width: 45rem;
+        border-radius: 30px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -580px; }
     #educativo .info_container .check_list h4 {
       margin: 1.5rem;
       font-weight: bold; }
@@ -385,10 +391,6 @@
         #educativo .info_container .check_list ul li .check_icon {
           width: 30px;
           margin-right: 1.5rem; }
-
-#educativo .contact {
-  padding-bottom: 6rem;
-  background: linear-gradient(145deg, white 73%, #343434 73%); }
 
 #contact_card {
   margin: 5rem;

@@ -21,23 +21,27 @@ const ProductCard = ({ title, description, icon, back_color }) => {
     )
 }
 
+const Footer = () => {
+    return (
+        <>
+
+        </>
+    )
+}
+
 const Educativo = () => {
     return(
         <>
             <Navbar />
-            <section id="educativo">
+            <div id='educativo' >
                 <header className='header_educativo'>
-                    <div className="header_pic">
-
+                    <div className="header_pic container m-0 p-0">
                     </div>
+
                     <article className="header_description">
                         <h1>TEXTO DESCRIPTIVO</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repudiandae ipsum consequuntur, at itaque nisi culpa veniam commodi in dolorum? Repudiandae veniam perferendis autem obcaecati?
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, alias ipsum! Quisquam explicabo, deserunt odio ad deleniti labore harum dolor.
-                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repudiandae ipsum consequuntur, at itaque nisi culpa veniam commodi in dolorum? Repudiandae veniam perferendis autem obcaecati?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, alias ipsum! Quisquam explicabo, deserunt odio ad deleniti labore harum dolor.</p>
                     </article>
                 </header>
 
@@ -54,9 +58,13 @@ const Educativo = () => {
                     </div>
                 </section>
 
-                <div className="info_container">
+                <section className="info_container">
                     <div className="check_list">
-                        <img src={childs_image} alt={getFileName(childs_image)} />
+                        <div className="container">
+                        </div>
+                        <div className="img_container">
+                            <img src={childs_image} alt={getFileName(childs_image)} />
+                        </div>
                         <h4>SLOGAN O TÍTULO DESCRPTIVO</h4>
                         <p className='sec_description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores dolorem quidem molestiae amet labore veniam quis tempora minus. Exercitationem in reprehenderit fuga excepturi laboriosam laborum esse harum ipsum, aliquam dicta rem ratione aut facilis, quae voluptates inventore commodi voluptatibus vitae.</p>
 
@@ -67,12 +75,12 @@ const Educativo = () => {
                             <li><img src={check} alt={getFileName(check)} className="check_icon" />Aliquam dicta rem ratione aut facilis, quae voluptates inventore commodi.</li>
                         </ul>
                     </div>
-                </div>
+                </section>
 
-                <article className='contact'>
+                <section className='contact'>
                     <Contact_card />
-                </article>
-            </section>
+                </section>
+            </div>
         </>
     )
 }
