@@ -68,32 +68,6 @@ $desc_header_width: 99vw - $img_header_width;
             display: flex;
             flex-direction: row;
 
-            .product_card {
-                color: white;
-                display: flex;
-                 flex-direction: column;
-                 align-items: center;
-                 justify-content: center;
-                width: 20rem;
-                height: 12rem;
-                text-align: center;
-                border-radius: 40px;
-                margin-right: 2rem;
-
-                &:last-child {
-                    margin-right: 0;
-                }
-
-                h3 {
-                    font-weight: bold;
-                    font-size: x-large;
-                }
-
-                img {
-                    width: 80px;
-                }
-            }
-
             .black {
                 background-color: #2F2F2F;
             }
@@ -106,9 +80,8 @@ $desc_header_width: 99vw - $img_header_width;
     
     .info_container {
         width: 99vw;
-        // position: relative;
         font-size: large;
-        background: url('/public/img/educativo/node_background.png');
+        background: linear-gradient(#ffffffee, #ffffffee), url('/public/img/educativo/node_background.png');
          background-repeat: no-repeat;
          background-position: left bottom;
          background-size: 40%;
@@ -164,6 +137,83 @@ $desc_header_width: 99vw - $img_header_width;
                         margin-right: 1.5rem;
                     }
                 }
+            }
+        }
+
+    }
+
+    .contact {
+        padding-bottom: 6rem;
+        background: linear-gradient(145deg, rgba(255,255,255,1) 73%, rgba(52,52,52,1) 73%);
+    }
+}
+
+.product_card {
+    color: white;
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+    width: 20rem;
+    height: 12rem;
+    text-align: center;
+    border-radius: 40px;
+    margin-right: 2rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: x-large;
+    }
+
+    img {
+        width: 80px;
+    }
+}
+
+#educativo_footer {
+    height: 14rem;
+    display: flex;
+    padding-top: 1.5rem;
+    border-top: 4px solid orange;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+    background: linear-gradient(#ffffffce, #ffffffce), url('/public/img/educativo/node_background.png');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 1000px;
+
+    .logo {
+        img {
+            width: 15rem;
+        }
+
+        p {
+            margin-top: 1rem;
+            font-size: small;
+        };
+    }
+
+    .social_networks {
+        height: 100%;
+        display: flex;
+         flex-direction: column;
+         justify-content: space-evenly;
+
+
+        h6 {
+            font-weight: bold;
+        }
+
+        .icons {
+            .footer_icon {
+                width: 25px;
+                height: 25px;
+                margin-right: 8px;
             }
         }
     }

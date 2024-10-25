@@ -1,11 +1,23 @@
+// functions
 import { getFileName } from '/src/js/functions.js';
+// components
+import Navbar from '../Navbar/navbar';
+import Contact_card from '../Contact_card/Contact_card';
+// home images
 import graduation_cap from '/public/img/educativo/graduation-cap-solid.png';
 import robot_icon from '/public/img/educativo/robot-solid.png';
 import user_icon from '/public/img/educativo/chalkboard-user-solid.png';
 import childs_image from '/public/img/educativo/childs.jpg';
 import check from '/public/img/educativo/check-solid.svg';
-import Contact_card from '../Contact_card/Contact_card';
-import Navbar from '../Navbar/navbar';
+// footer images
+import logo_ruf_educativo from '/public/img/footer/ruf_logo_educativo.png';
+import whatsapp_icon from '/public/img/footer/whatsapp.svg';
+import facebook_icon from '/public/img/footer/facebook.svg';
+import instagram_icon from '/public/img/footer/instagram.svg';
+import linkedin_icon from '/public/img/footer/linkedin.svg';
+import x_icon from '/public/img/footer/x-twitter.svg';
+import youtube_icon from '/public/img/footer/youtube.svg';
+import envelope_icon from '/public/img/footer/envelope.svg';
 
 
 const ProductCard = ({ title, description, icon, back_color }) => {
@@ -24,7 +36,25 @@ const ProductCard = ({ title, description, icon, back_color }) => {
 const Footer = () => {
     return (
         <>
+            <footer id='educativo_footer'>
+                <div className="logo">
+                    <img src={logo_ruf_educativo} alt={getFileName(logo_ruf_educativo)} />
+                    <p>® 2024 Robótica de Utilidades Funcionales<br />All rights reserved</p>
+                </div>
+                <div className="social_networks">
+                    <h6>SEGUINOS EN</h6>
 
+                    <div className="icons">
+                        <img className="footer_icon" src={whatsapp_icon} alt={getFileName(whatsapp_icon)} />
+                        <img className="footer_icon" src={linkedin_icon} alt={getFileName(linkedin_icon)} />
+                        <img className="footer_icon" src={envelope_icon} alt={getFileName(envelope_icon)} />
+                        <img className="footer_icon" src={instagram_icon} alt={getFileName(instagram_icon)} />
+                        <img className="footer_icon" src={facebook_icon} alt={getFileName(facebook_icon)} />
+                        <img className="footer_icon" src={x_icon} alt={getFileName(x_icon)} />
+                        <img className="footer_icon" src={youtube_icon} alt={getFileName(youtube_icon)} />
+                    </div>
+                </div>
+            </footer>
         </>
     )
 }
@@ -32,7 +62,7 @@ const Footer = () => {
 const Educativo = () => {
     return(
         <>
-            <Navbar />
+            <Navbar type={"navbar navbar_educativo"} />
             <div id='educativo' >
                 <header className='header_educativo'>
                     <div className="header_pic container m-0 p-0">
@@ -81,6 +111,7 @@ const Educativo = () => {
                     <Contact_card />
                 </section>
             </div>
+            <Footer />
         </>
     )
 }
