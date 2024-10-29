@@ -1,8 +1,8 @@
 import { getFileName } from '/src/js/functions.js';
-import send_icon from '/public/img/contact_card/paper-plane-solid.svg'
-import whatsapp_icon from '/public/img/contact_card/whatsapp-brands-solid.svg'
-import location_icon from '/public/img/contact_card/location-dot-solid.svg'
-import mail_icon from '/public/img/contact_card/envelope-solid.svg'
+import send_icon from '/img/contact_card/paper-plane-solid.svg'
+import whatsapp_icon from '/img/contact_card/whatsapp-brands-solid.svg'
+import location_icon from '/img/contact_card/location-dot-solid.svg'
+import mail_icon from '/img/contact_card/envelope-solid.svg'
 
 const Contact_card = () => {
     return(

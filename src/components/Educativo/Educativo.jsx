@@ -4,20 +4,20 @@ import { getFileName } from '/src/js/functions.js';
 import Navbar from '../Navbar/navbar';
 import Contact_card from '../Contact_card/Contact_card';
 // home images
-import graduation_cap from '/public/img/educativo/graduation-cap-solid.png';
-import robot_icon from '/public/img/educativo/robot-solid.png';
-import user_icon from '/public/img/educativo/chalkboard-user-solid.png';
-import childs_image from '/public/img/educativo/childs.jpg';
-import check from '/public/img/educativo/check-solid.svg';
+import graduation_cap from '/img/educativo/graduation-cap-solid.png';
+import robot_icon from '/img/educativo/robot-solid.png';
+import user_icon from '/img/educativo/chalkboard-user-solid.png';
+import childs_image from '/img/educativo/childs.jpg';
+import check from '/img/educativo/check-solid.svg';
 // footer images
-import logo_ruf_educativo from '/public/img/footer/ruf_logo_educativo.png';
-import whatsapp_icon from '/public/img/footer/whatsapp.svg';
-import facebook_icon from '/public/img/footer/facebook.svg';
-import instagram_icon from '/public/img/footer/instagram.svg';
-import linkedin_icon from '/public/img/footer/linkedin.svg';
-import x_icon from '/public/img/footer/x-twitter.svg';
-import youtube_icon from '/public/img/footer/youtube.svg';
-import envelope_icon from '/public/img/footer/envelope.svg';
+import logo_ruf_educativo from '/img/footer/ruf_logo_educativo.png';
+import whatsapp_icon from '/img/footer/whatsapp.svg';
+import facebook_icon from '/img/footer/facebook.svg';
+import instagram_icon from '/img/footer/instagram.svg';
+import linkedin_icon from '/img/footer/linkedin.svg';
+import x_icon from '/img/footer/x-twitter.svg';
+import youtube_icon from '/img/footer/youtube.svg';
+import envelope_icon from '/img/footer/envelope.svg';
 
 
 const ProductCard = ({ title, description, icon, back_color }) => {

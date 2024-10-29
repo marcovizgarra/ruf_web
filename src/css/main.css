@@ -515,28 +515,84 @@
 
 #industrial {
   width: 99vw; }
-  #industrial .industrial_carousel {
-    width: 99vw;
-    height: 45rem;
-    border-end-end-radius: 100px; }
-    #industrial .industrial_carousel .carousel-item {
+  #industrial .intro {
+    background: linear-gradient(to bottom, #fffffff3, #fffffff3), url("/img/industrial/industrial_background_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+    #industrial .intro .industrial_carousel {
+      width: 99vw;
       height: 45rem;
       border-end-end-radius: 100px; }
-      #industrial .industrial_carousel .carousel-item .slide_content {
-        width: 45vw;
-        margin-top: 5rem;
-        margin-left: 5rem; }
-    #industrial .industrial_carousel .slide_1 {
-      background: url("/public/img/industrial/unit_tree_robot.webp");
-      background-position: right;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-color: white;
-      border-end-end-radius: 100px; }
-    #industrial .industrial_carousel .slide_3 {
-      background: url("/public/img/industrial/dog_robot.jpg");
-      background-color: black;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: top;
-      border-end-end-radius: 100px; }
+      #industrial .intro .industrial_carousel .carousel-item {
+        height: 45rem;
+        border-end-end-radius: 100px; }
+        #industrial .intro .industrial_carousel .carousel-item .slide_content {
+          width: 45vw;
+          margin-top: 5rem;
+          margin-left: 5rem; }
+      #industrial .intro .industrial_carousel .slide_1 {
+        background: url("/img/industrial/unit_tree_robot.webp");
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: white;
+        border-end-end-radius: 100px; }
+      #industrial .intro .industrial_carousel .slide_3 {
+        background: url("/img/industrial/dog_robot.jpg");
+        background-color: black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        border-end-end-radius: 100px; }
+  #industrial .industrial_bussiness_units .units_description h2 {
+    margin-top: 4rem; }
+  #industrial .industrial_bussiness_units .units_description p {
+    width: 40%;
+    margin: 20px;
+    padding-block: 2rem; }
+  #industrial .sustainable_development {
+    padding-block: 8rem; }
+    #industrial .sustainable_development .earth_hands {
+      width: 40rem; }
+    #industrial .sustainable_development .goals {
+      width: 100%; }
+      #industrial .sustainable_development .goals .title .title_icon {
+        width: 45px;
+        height: 45px;
+        margin-right: 15px; }
+      #industrial .sustainable_development .goals .row p {
+        width: 40rem; }
+      #industrial .sustainable_development .goals .row .check {
+        text-align: left; }
+        #industrial .sustainable_development .goals .row .check img {
+          width: 50px;
+          height: 25px; }
+
+.bussiness_slide h3 {
+  color: #0098DA; }
+
+.slide_arrow img {
+  width: 30px; }
+
+.slide_icon {
+  width: 65px;
+  height: 60px;
+  margin-bottom: 20px; }
+
+.next_arrow {
+  background: none; }
+
+.prev_arrow {
+  background: none; }
+
+.slick-prev {
+  left: -55px;
+  content: ''; }
+  .slick-prev::before {
+    content: ''; }
+
+.slick-next {
+  right: -45px;
+  content: ''; }
+  .slick-next::before {
+    content: ''; }
