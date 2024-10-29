@@ -42,6 +42,9 @@ const Slide = () => {
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />
     };    
