@@ -286,6 +286,8 @@
     font-weight: bold; }
 
 .navbar_industrial {
+  border-bottom: 2px solid;
+  border-image: linear-gradient(90deg, white 53%, #dcf8ff 63%, #00caff 75%, #004f9d 92%) 1;
   background: linear-gradient(#ffffffce, #ffffffce), url("/public/img/navbar/hex_background.png");
   background-repeat: no-repeat;
   background-position: right;
