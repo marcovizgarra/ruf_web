@@ -59,10 +59,9 @@ const Footer = () => {
     )
 }
 
-const Educativo = () => {
-    return(
+const HomeEducativo = () => {
+    return (
         <>
-            <Navbar type={"navbar navbar_educativo"} />
             <div id='educativo' >
                 <header className='header_educativo'>
                     <div className="header_pic container m-0 p-0">
@@ -111,6 +110,15 @@ const Educativo = () => {
                     <Contact_card />
                 </section>
             </div>
+        </>
+    )
+}
+
+const Educativo = () => {
+    return(
+        <>
+            <Navbar type={"educativo"} />
+            <HomeEducativo />
             <Footer />
         </>
     )

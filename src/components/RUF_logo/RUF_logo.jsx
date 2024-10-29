@@ -2,14 +2,17 @@ import { getFileName } from '/src/js/functions.js';
 import { useEffect, useState } from 'react';
 import ruf_logo from '/img/home_page/ruf_logo.png'
 import ruf_logo_educative from '/img/logos/educative_logo.png'
+import ruf_logo_industrial from '/img/logos/industrial_logo.png'
 
 const RUF_logo = ({ type }) => {
     const [hover, setHover] = useState(true);
     const [logo, setLogo] = useState('');
 
     useEffect(() => {
-        if (type == 'educative') {
+        if (type == 'educativo') {
             setLogo(ruf_logo_educative);
+        } else if (type == 'industrial') {
+            setLogo(ruf_logo_industrial)
         } else {
             setLogo(ruf_logo);
         }

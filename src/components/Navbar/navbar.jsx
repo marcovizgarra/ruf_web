@@ -3,8 +3,8 @@ import RUF_logo from "../RUF_logo/RUF_logo"
 const Navbar = ({ type }) => {
     return(
         <>
-            <nav className={"navbar navbar-expand-lg bg-white " + type}>
-                <RUF_logo type={'educative'} />
+            <nav className={"navbar navbar-expand-lg bg-white " + "navbar_" + type}>
+                <RUF_logo type={type} />
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>

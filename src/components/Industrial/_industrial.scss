@@ -1,0 +1,38 @@
+#industrial {
+    width: 99vw;
+
+    .industrial_carousel {
+        width: 99vw;
+        height: 45rem;
+        border-end-end-radius: 100px;
+
+        .carousel-item {
+            height: 45rem;
+            border-end-end-radius: 100px;
+
+            .slide_content {
+                width: 45vw;
+                margin-top: 5rem;
+                margin-left: 5rem;
+            }
+        }
+
+        .slide_1 {
+            background: url('/public/img/industrial/unit_tree_robot.webp');
+             background-position: right;
+             background-size: contain;
+             background-repeat: no-repeat;
+             background-color: white;
+             border-end-end-radius: 100px;
+        }
+
+        .slide_3 {
+            background: url('/public/img/industrial/dog_robot.jpg');
+             background-color: black;
+             background-size: cover;
+             background-repeat: no-repeat;
+             background-position: top;
+             border-end-end-radius: 100px;
+        }
+    }
+}

@@ -272,7 +272,7 @@
         padding: 0; }
 
 .navbar_educativo {
-  background: linear-gradient(#ffffffce, #ffffffce), url("/public/img/educativo/node_background.png");
+  background: linear-gradient(#ffffffce, #ffffffce), url("/public/img/navbar/node_background.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: 760px; }
@@ -281,6 +281,20 @@
     background-clip: text;
     border-bottom: 4px solid transparent;
     border-image: linear-gradient(90deg, #da7100 0%, #ff9500 19%, #ffa527 47%) 1;
+    color: transparent;
+    position: relative;
+    font-weight: bold; }
+
+.navbar_industrial {
+  background: linear-gradient(#ffffffce, #ffffffce), url("/public/img/navbar/hex_background.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 600px; }
+  .navbar_industrial .collapse .navbar-nav .nav-item .active {
+    background: linear-gradient(90deg, #020024 0%, #090979 20%, #136bbc 49%, #1690d1 59%, #002024 100%);
+    background-clip: text;
+    border-bottom: 4px solid transparent;
+    border-image: linear-gradient(90deg, #020024 0%, #090979 20%, #136bbc 49%, #1690d1 59%, #002024 100%) 1;
     color: transparent;
     position: relative;
     font-weight: bold; }
@@ -498,3 +512,31 @@
         width: 2rem; }
       #contact_card .form_container .col-12 p {
         text-align: center; }
+
+#industrial {
+  width: 99vw; }
+  #industrial .industrial_carousel {
+    width: 99vw;
+    height: 45rem;
+    border-end-end-radius: 100px; }
+    #industrial .industrial_carousel .carousel-item {
+      height: 45rem;
+      border-end-end-radius: 100px; }
+      #industrial .industrial_carousel .carousel-item .slide_content {
+        width: 45vw;
+        margin-top: 5rem;
+        margin-left: 5rem; }
+    #industrial .industrial_carousel .slide_1 {
+      background: url("/public/img/industrial/unit_tree_robot.webp");
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: white;
+      border-end-end-radius: 100px; }
+    #industrial .industrial_carousel .slide_3 {
+      background: url("/public/img/industrial/dog_robot.jpg");
+      background-color: black;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top;
+      border-end-end-radius: 100px; }
