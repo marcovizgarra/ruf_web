@@ -34,13 +34,13 @@ const BussinesUnits = () => {
 
                     <div className="card_container">
                         <div className="row">
-                            <UnitCard title={'Educativo'} img={education_icon}/>
-                            <UnitCard title={'Industrial'} img={industry_icon}/>
+                            <UnitCard title={'Industrial'} img={industry_icon} />
+                            <UnitCard title={'Educativo'} img={education_icon} />
                         </div>
 
                         <div className="row">
-                            <UnitCard title={'RSE'} img={rse_icon}/>
-                            <UnitCard title={'GovTech'} img={gov_tech_icon}/>
+                            <UnitCard title={'GovTech'} img={gov_tech_icon} />
+                            <UnitCard title={'RSE'} img={rse_icon} />    
                         </div>
                     </div>
                 </div>

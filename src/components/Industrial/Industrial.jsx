@@ -43,7 +43,7 @@ const Slide = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3500,
         pauseOnHover: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />
