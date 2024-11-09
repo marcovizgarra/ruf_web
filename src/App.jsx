@@ -2,8 +2,8 @@ import { useState } from 'react';
 import Home from './components/home/Home.jsx';
 import Educativo from './components/Educativo/Educativo.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Industrial from './components/Industrial/Industrial.jsx';
 import FloatingWhatsApp from './components/FloatingWhatsApp/FloatingWhatsApp.jsx';
+import Industrial from './components/Industrial/Industrial.jsx';
 
 function App() {
   return (
