@@ -8,12 +8,12 @@ function FloatingWhatsApp() {
     const dropdownRef = useRef(null);
     const iconRef = useRef(null);
 
-    // Función para cambiar el estado de visibilidad de los íconos
+    
     const toggleDropdown = () => {
         setIsDropdownVisible(prevState => !prevState);
     };
 
-    // Cerrar el dropdown si se hace clic fuera de él
+
     const handleClickOutside = (event) => {
         if (
             dropdownRef.current && !dropdownRef.current.contains(event.target) && 
@@ -33,7 +33,7 @@ function FloatingWhatsApp() {
 
     return (
         <div className="floating-whatsapp">
-            {/* Icono de WhatsApp que al hacer clic activa el dropdown */}
+            
             <div 
                 className="whatsapp-icon" 
                 onClick={toggleDropdown} 
@@ -41,8 +41,7 @@ function FloatingWhatsApp() {
             >
                 <img src={Whatsapp_icon} alt="WhatsApp" />
             </div>
-
-            {/* Los íconos desplegados se muestran solo si isDropdownVisible es true */}
+            
             <div 
                 className={`dropdown ${isDropdownVisible ? 'show' : ''}`} 
                 ref={dropdownRef}
