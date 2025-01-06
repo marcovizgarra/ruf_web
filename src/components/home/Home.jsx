@@ -38,10 +38,10 @@ const BussinesUnits = () => {
                             <UnitCard title={'Educativo'} img={education_icon} />
                         </div>
 
-                        <div className="row">
+                        {/* <div className="row">
                             <UnitCard title={'GovTech'} img={gov_tech_icon} />
                             <UnitCard title={'RSE'} img={rse_icon} />    
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>

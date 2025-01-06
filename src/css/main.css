@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
@@ -600,21 +601,60 @@
     content: ''; }
 
 .floating-whatsapp {
+  background-color: #0091ff;
   position: fixed;
-  bottom: 10px;
-  right: 30px;
-  width: 100px;
-  height: 100px;
+  bottom: 20px;
+  right: 20px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer; }
-  .floating-whatsapp img {
-    width: 100%;
-    height: 100%; }
-    .floating-whatsapp img:hover {
-      filter: drop-shadow(-1px -2px 21px rgba(6, 172, 102, 0.65)); }
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; }
+  .floating-whatsapp .plus_icon {
+    display: flex;
+    justify-content: center; }
+    .floating-whatsapp .plus_icon img {
+      width: 60%;
+      margin: 0;
+      padding: 0;
+      transition: transform 0.2s ease-in-out; }
   .floating-whatsapp:hover {
     transform: scale(1.1);
-    transition: transform 0.2s; }
+    box-shadow: 1px 0px 85px 1px rgba(0, 145, 255, 0.938); }
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 100px;
+  right: 10;
+  background-color: transparent;
+  padding: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; }
+  .dropdown.show {
+    opacity: 1;
+    transform: translateY(0); }
+  .dropdown .dropdown-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+    .dropdown .dropdown-item img {
+      width: 60px;
+      /* Ajustamos el tamaño de los íconos */
+      height: 60px; }
+    .dropdown .dropdown-item:hover {
+      transform: scale(1.1);
+      /* Efecto de aumento del tamaño */ }
+    .dropdown .dropdown-item:active {
+      transform: scale(1);
+      /* Evita el efecto de escalado al hacer clic */ }
