@@ -10,12 +10,12 @@ function FloatingWhatsApp() {
     const dropdownRef = useRef(null);
     const iconRef = useRef(null);
 
-    // Función para cambiar el estado de visibilidad de los íconos
+    
     const toggleDropdown = () => {
         setIsDropdownVisible(prevState => !prevState);
     };
 
-    // Cerrar el dropdown si se hace clic fuera de él
+
     const handleClickOutside = (event) => {
         if (
             dropdownRef.current && !dropdownRef.current.contains(event.target) && 
