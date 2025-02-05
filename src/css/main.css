@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
@@ -624,37 +623,32 @@
   .floating-whatsapp:hover {
     transform: scale(1.1);
     box-shadow: 1px 0px 85px 1px rgba(0, 145, 255, 0.938); }
+  .floating-whatsapp:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0) translateX(50%); }
 
 .dropdown {
   display: flex;
   flex-direction: column;
   position: absolute;
   bottom: 100px;
-  right: 10;
-  background-color: transparent;
-  padding: 0;
+  right: 50%;
+  transform: translateX(50%) translateY(20px);
+  visibility: hidden;
   opacity: 0;
-  transform: translateY(20px);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; }
-  .dropdown.show {
-    opacity: 1;
-    transform: translateY(0); }
   .dropdown .dropdown-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px 0;
+    margin: 18px 0;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
     .dropdown .dropdown-item img {
       width: 60px;
-      /* Ajustamos el tamaño de los íconos */
       height: 60px; }
     .dropdown .dropdown-item:hover {
-      transform: scale(1.1);
-      /* Efecto de aumento del tamaño */ }
-    .dropdown .dropdown-item:active {
-      transform: scale(1);
-      /* Evita el efecto de escalado al hacer clic */ }
+      transform: scale(1.1); }

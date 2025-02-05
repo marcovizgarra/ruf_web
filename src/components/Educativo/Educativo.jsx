@@ -1,5 +1,3 @@
-// functions
-import { getFileName } from '/src/js/functions.js';
 // components
 import Navbar from '../Navbar/navbar';
 import Contact_card from '../Contact_card/Contact_card';
@@ -38,20 +36,20 @@ const Footer = () => {
         <>
             <footer id='educativo_footer'>
                 <div className="logo">
-                    <img src={logo_ruf_educativo} alt={getFileName(logo_ruf_educativo)} />
+                    <img src={logo_ruf_educativo} alt='ruf_educativo_logo' />
                     <p>® 2024 Robótica de Utilidades Funcionales<br />All rights reserved</p>
                 </div>
                 <div className="social_networks">
                     <h6>SEGUINOS EN</h6>
 
                     <div className="icons">
-                        <img className="footer_icon" src={whatsapp_icon} alt={getFileName(whatsapp_icon)} />
-                        <img className="footer_icon" src={linkedin_icon} alt={getFileName(linkedin_icon)} />
-                        <img className="footer_icon" src={envelope_icon} alt={getFileName(envelope_icon)} />
-                        <img className="footer_icon" src={instagram_icon} alt={getFileName(instagram_icon)} />
-                        <img className="footer_icon" src={facebook_icon} alt={getFileName(facebook_icon)} />
-                        <img className="footer_icon" src={x_icon} alt={getFileName(x_icon)} />
-                        <img className="footer_icon" src={youtube_icon} alt={getFileName(youtube_icon)} />
+                        <img className="footer_icon" src={whatsapp_icon} alt='whatsapp_icon' />
+                        <img className="footer_icon" src={linkedin_icon} alt='linkedin_icon' />
+                        <img className="footer_icon" src={envelope_icon} alt='envelope_icon' />
+                        <img className="footer_icon" src={instagram_icon} alt='instagram_icon' />
+                        <img className="footer_icon" src={facebook_icon} alt='facebook_icon' />
+                        <img className="footer_icon" src={x_icon} alt='x_icon' />
+                        <img className="footer_icon" src={youtube_icon} alt='youtube_icon' />
                     </div>
                 </div>
             </footer>
@@ -92,16 +90,16 @@ const HomeEducativo = () => {
                         <div className="container">
                         </div>
                         <div className="img_container">
-                            <img src={childs_image} alt={getFileName(childs_image)} />
+                            <img src={childs_image} alt='childs_img' />
                         </div>
                         <h4>SLOGAN O TÍTULO DESCRPTIVO</h4>
                         <p className='sec_description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores dolorem quidem molestiae amet labore veniam quis tempora minus. Exercitationem in reprehenderit fuga excepturi laboriosam laborum esse harum ipsum, aliquam dicta rem ratione aut facilis, quae voluptates inventore commodi voluptatibus vitae.</p>
 
                         <ul>
-                            <li><img src={check} alt={getFileName(check)} className="check_icon" />Aliquam dicta rem ratione aut facilis, quae voluptates inventore commodi.</li>
-                            <li><img src={check} alt={getFileName(check)} className="check_icon" />Maiores dolorem quidem molestiae amet labore veniam quis tempora minus</li>
-                            <li><img src={check} alt={getFileName(check)} className="check_icon" />Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
-                            <li><img src={check} alt={getFileName(check)} className="check_icon" />Aliquam dicta rem ratione aut facilis, quae voluptates inventore commodi.</li>
+                            <li><img src={check} alt='check_icon' className="check_icon" />Aliquam dicta rem ratione aut facilis, quae voluptates inventore commodi.</li>
+                            <li><img src={check} alt='check_icon' className="check_icon" />Maiores dolorem quidem molestiae amet labore veniam quis tempora minus</li>
+                            <li><img src={check} alt='check_icon' className="check_icon" />Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                            <li><img src={check} alt='check_icon' className="check_icon" />Aliquam dicta rem ratione aut facilis, quae voluptates inventore commodi.</li>
                         </ul>
                     </div>
                 </section>

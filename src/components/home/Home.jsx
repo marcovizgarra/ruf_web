@@ -57,20 +57,20 @@ const Contact = () => {
                     <ul>
                         <h3>CONTÁCTANOS</h3>
                         <li>
-                            <img src={location_icon} alt={getFileName(location_icon)} /> 
+                            <img src={location_icon} alt='location_icon' /> 
                             <p>Av. Martín Tissera 957, Mendiolaza, Argentina</p>
                         </li>
                         <li>
-                            <img src={whatsapp_icon} alt={getFileName(whatsapp_icon)} />
+                            <img src={whatsapp_icon} alt='whatsapp_icon' />
                             <p>+54 9 3516 095013 / +54 9 3513 297292</p>
                         </li>
                         <li>
-                            <img src={e_mail_icon} alt={getFileName(e_mail_icon)} />
+                            <img src={e_mail_icon} alt='e_mail_icon' />
                             <p>ruf.desarrollos@gmail.com</p>
                         </li>
                         <br />
                         <button className='contact_form_btn'>
-                            <img src={contact_icon} alt={getFileName(contact_icon)} />
+                            <img src={contact_icon} alt='contact_icon' />
                             Ir al furmulario de contacto
                         </button>  
                     </ul>                  

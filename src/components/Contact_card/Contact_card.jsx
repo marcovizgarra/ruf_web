@@ -1,4 +1,3 @@
-import { getFileName } from '/src/js/functions.js';
 import send_icon from '/img/contact_card/paper-plane-solid.svg'
 import whatsapp_icon from '/img/contact_card/whatsapp-brands-solid.svg'
 import location_icon from '/img/contact_card/location-dot-solid.svg'
@@ -12,11 +11,11 @@ const Contact_card = () => {
                     <h4>INFORMACIÓN DE CONTACTO</h4>
                     <ul>
                         <li>
-                            <img src={location_icon} alt={getFileName(location_icon)} />
+                            <img src={location_icon} alt='location_icon' />
                             <p>Av. Martín Tissera 957, X5107, Mendiolaza, Córdoba, Argentina</p>
                         </li>
                         <li>
-                            <img src={whatsapp_icon} alt={getFileName(whatsapp_icon)} />
+                            <img src={whatsapp_icon} alt='whatsapp_icon' />
                             <p>+54 9 3516 095013 / +54 9 3513 297292</p>
                         </li>
                         
@@ -50,7 +49,7 @@ const Contact_card = () => {
 
                         <div className="col-12">
                             <button type="submit" className="form_btn">
-                                <img src={send_icon} alt={getFileName(send_icon)} />
+                                <img src={send_icon} alt='send_icon' />
                             </button>
                             <p>Enviar</p>
                         </div>

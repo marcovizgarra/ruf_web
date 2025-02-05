@@ -1,4 +1,3 @@
-import { getFileName } from '/src/js/functions.js';
 import { useEffect, useState } from 'react';
 import ruf_logo from '/img/home_page/ruf_logo.png'
 import ruf_logo_educative from '/img/logos/educative_logo.png'
@@ -21,7 +20,7 @@ const RUF_logo = ({ type }) => {
     return(
         <>
             <div className="logo_container">
-                <img className='ruf_logo' src={logo} alt={getFileName(logo)} onMouseEnter={() => {setHover(false)}} onMouseOut={() => {setHover(true)}}/>
+                <img className='ruf_logo' src={logo} alt='logo_ruf' onMouseEnter={() => {setHover(false)}} onMouseOut={() => {setHover(true)}}/>
                 <p className={ hover ? 'hide_initials' : 'initials_enter animate__animated animate__fadeInUp'}>
                     Robótica de Utilidades Funcionales
                     <br />
