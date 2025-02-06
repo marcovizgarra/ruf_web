@@ -1,3 +1,5 @@
+// functions
+import { getFileName } from '../../js/functions.js';
 // components
 import Navbar from '../Navbar/navbar';
 import Contact_card from '../Contact_card/Contact_card';

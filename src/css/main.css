@@ -599,8 +599,9 @@
   .slick-next::before {
     content: ''; }
 
-.floating-whatsapp {
-  background-color: #0091ff;
+.floating-whatsapp,
+.toggle-floating {
+  background-color: #255cd3;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -612,21 +613,28 @@
   justify-content: center;
   cursor: pointer;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; }
-  .floating-whatsapp .plus_icon {
+  .floating-whatsapp .plus_icon,
+  .toggle-floating .plus_icon {
     display: flex;
     justify-content: center; }
-    .floating-whatsapp .plus_icon img {
+    .floating-whatsapp .plus_icon img,
+    .toggle-floating .plus_icon img {
       width: 60%;
       margin: 0;
       padding: 0;
       transition: transform 0.2s ease-in-out; }
-  .floating-whatsapp:hover {
-    transform: scale(1.1);
-    box-shadow: 1px 0px 85px 1px rgba(0, 145, 255, 0.938); }
-  .floating-whatsapp:hover .dropdown {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0) translateX(50%); }
+
+.floating-whatsapp:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 0px 85px 1px rgba(0, 145, 255, 0.938); }
+
+.toggle-floating .dropdown {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0) translateX(50%); }
+
+.toggle-floating:hover {
+  box-shadow: none; }
 
 .dropdown {
   display: flex;
@@ -638,17 +646,24 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; }
+  .dropdown .whatsapp {
+    background-color: #25D366; }
+    .dropdown .whatsapp:hover {
+      box-shadow: 1px 0px 50px 1px #008b0c81; }
+  .dropdown .mail {
+    background-color: #0091ff; }
+    .dropdown .mail:hover {
+      box-shadow: 1px 0px 50px 1px #0091ff81; }
   .dropdown .dropdown-item {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 18px 0;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
     .dropdown .dropdown-item img {
-      width: 60px;
-      height: 60px; }
+      width: 35px; }
     .dropdown .dropdown-item:hover {
       transform: scale(1.1); }
