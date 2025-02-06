@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import whatsapp_icon from "/public/img/floating_whatsapp/whatsapp-brands-solid.svg";
 import envelope_icon from "/public/img/floating_whatsapp/envelope-solid.svg";
 import plus_icon from "/public/img/floating_whatsapp/plus-solid.svg"
 import minus_icon from "/public/img/floating_whatsapp/minus-solid.svg";
+import { use } from "react";
 
 function FloatingWhatsApp() {
     const [isDropdownVisible, setIsDropdownVisible] = useState(false);
@@ -10,6 +11,14 @@ function FloatingWhatsApp() {
     const toggleDropdown = () => {
         setIsDropdownVisible(prevState => !prevState);
     }
+
+    useEffect(() => {
+        if (isDropdownVisible === true) {
+            setTimeout(() => {
+                setIsDropdownVisible(false);
+            }, 6000)
+        };
+    }, [isDropdownVisible]);
 
     return (
         <div 

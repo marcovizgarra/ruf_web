@@ -51,7 +51,7 @@
     transform: translateX(50%) translateY(20px);
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 
     .whatsapp {
         background-color: #25D366;
